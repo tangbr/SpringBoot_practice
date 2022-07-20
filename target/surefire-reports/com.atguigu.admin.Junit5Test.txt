@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.atguigu.admin.Junit5Test
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 4, Errors: 1, Skipped: 1, Time elapsed: 0.529 s <<< FAILURE! - in com.atguigu.admin.Junit5Test
+testException  Time elapsed: 0.01 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 业务逻辑居然正常运行？ ==> Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
+	at com.atguigu.admin.Junit5Test.testException(Junit5Test.java:60)
+
+testTimeOut  Time elapsed: 0.33 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testTimeOut() timed out after 300 milliseconds
+
+all  Time elapsed: 0.019 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+test (1 failure)
+	org.opentest4j.AssertionFailedError: 结果不是1 ==> expected: <1> but was: <2>
+	at com.atguigu.admin.Junit5Test.all(Junit5Test.java:51)
+
+array  Time elapsed: 0.012 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 数组内容不相等 ==> array contents differ at index [0], expected: <2> but was: <1>
+	at com.atguigu.admin.Junit5Test.array(Junit5Test.java:44)
+
+testSimpleAssertions  Time elapsed: 0.009 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 业务逻辑计算失败 ==> expected: <6> but was: <5>
+	at com.atguigu.admin.Junit5Test.testSimpleAssertions(Junit5Test.java:35)
+
